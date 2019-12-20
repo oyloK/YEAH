@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+ #wrapper {
+   border: 1px solid red;
+   display: inline-block;
+   height: 700px;
+   width: 989px;
+   overflow: auto;
+   vertical-align: top;
+ }
+ #side-menu {
+   border: 5px solid red;
+   width: 150px;
+   height: 700px;
+   overflow: hidden;
+   display: inline-block;
+   font-size: 24px;
+   background-color: crimson;
+ }
+ .content,
+ .logo,
+ .logo-navigator,
+ .middle-menu,
+ .bottom {
+ }
+ #real-wrapper {
+   width: 100%;
+   border: 5px solid darkblue;
+   height: 700px;
+   overflow: auto;
+   background-color: pink;
+ }
+ .opac-img {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+ }
+ .image {
+   width: 150px;
+   opacity: 1;
+   transition-duration: .5s;
+   display: block;
+ }
+ .middle {
+   opacity: 0;
+   transition-duration: .5s;
+   position: absolute;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+ }
+ .opac-img:hover .image {
+   opacity: 0.5;
+ }
+ .opac-img:hover .middle {
+   opacity: 1;
+ }
+ .text {
+   padding: 20px 32px;
+
+ }
+ a:link,
+ a:visited,
+ a:hover,
+ a:active {
+   text-decoration: none;
+   color: black;
+ }
+</style>
+ <head>
+   <meta charset="utf-8">
+   <meta name="description" content="Здравейте, това е моят първи (ОФИЦИАЛЕН) опит за сайт! Моля, бъдете търпеливи!">
+   <meta name="keywords" content="pizza, pica, pizariq, ruse">
+   <meta name="author" content="Koleca">
+   <meta name="viewport" content="width=device-width">
+    <title>
+      Koleca's Pizzeria
+    </title>
+ </head>
+ <body>
+ <center>
+  <div id=real-wrapper>
+    <div id="side-menu">
+      <div class="opac-img">
+        <img src="./icons/pizza_margarita.png" alt="pizza" class="image">
+        <div class="middle">
+            <div class="text">
+              <a href="#">Pizza</a>
+            </div>
+        </div>
+      </div>
+      <div class="opac-img">
+        <img src="./icons/spaghetti.png" alt="spaghetti" class="image">
+        <div class="middle">
+            <div class="text">
+              <a href="#">Spaghetti</a>
+            </div>
+        </div>
+      </div>
+     </div>
+   <div id=wrapper>text1
+      <div class="logo">text3
+        <div class="logo-navigator">text4
+        </div>
+      </div>
+      <div class="content">text5
+       <div class="middle-menu">text6
+        </div>
+      </div>
+      <div class="bottom">text7
+      </div>
+   </div>
+  </div>
+ </center>
+ </body>
+</html>
